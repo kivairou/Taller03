@@ -3,7 +3,7 @@
  * Kevin Zamora Riquelme | 21.578.521-1 | ICCI
  */
 
-package Main;
+package src;
 
 public class App {
 
