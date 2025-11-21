@@ -3,19 +3,17 @@ package src;
 import java.time.LocalDate;
 
 public abstract class Tarea {
-	protected String proyectoId;
+	
     protected String id;
-    protected String tipo;
     protected String descripcion;
     protected String estado;
-    protected Usuario responsable;
+    protected String responsable;
     protected String complejidad; // Baja/Media/Alta
     protected LocalDate fechaCreacion;
 
-    public Tarea(String proyectoId, String id, String tipo, String descripcion, String estado, Usuario responsable, String complejidad, LocalDate fechaCreacion) {
-        this.proyectoId = proyectoId; 
+    public Tarea(String id, String descripcion, String estado, String responsable, String complejidad, LocalDate fechaCreacion) {
+        
         this.id = id; 
-        this.tipo = tipo;
         this.descripcion = descripcion; 
         this.estado = estado; 
         this.responsable = responsable;
@@ -23,25 +21,19 @@ public abstract class Tarea {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String getProyectoId() { 
-    	return proyectoId; 
-    	}
     
     public String getId() { 
     	return id; 
     	}
-    
-    public String getTipo() { 
-    	return tipo; 
-    	}
-    
-    public String getDescripcion() { 
-    	return descripcion; 
-    	}
-    
+   
+ 
     public String getEstado() { 
     	return estado; 
     	}
+    
+    public void setEstado(String estado) {
+    	this.estado = estado;
+    }
     
     public String getResponsable() { 
     	return responsable; 
@@ -53,14 +45,6 @@ public abstract class Tarea {
     
     public LocalDate getFechaCreacion() { 
     	return fechaCreacion; 
-    	}
-
-    public void setEstado(String e) { 
-    	this.estado = e; 
-    	}
-    
-    public void setResponsable(String r) { 
-    	this.responsable = r; 
     	}
 
     // Visitor accept

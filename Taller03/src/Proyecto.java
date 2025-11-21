@@ -30,11 +30,11 @@ public class Proyecto {
 		return tareas;
 	}
 
-	public void addTarea(Tarea t) {
+	public void agregarTarea(Tarea t) {
 		tareas.add(t);
 	}
 
-	public void removeTarea(String tid) {
+	public void borrarTarea(String tid) {
 		for (int i = 0; i < tareas.size(); i++) {
 			if (tareas.get(i).getId().equals(tid)) {
 				tareas.remove(i);

@@ -1,6 +1,6 @@
 package src;
 
-public class Usuario {
+public abstract class Usuario {
 	private String username;
     private String password;
     private String rol; // "Administrador" o "Colaborador"
@@ -23,7 +23,5 @@ public class Usuario {
     	return rol; 
     }
     
-    public boolean isAdministrador() { 
-    	return rol.equalsIgnoreCase("Administrador"); 
-    	}
+    public abstract void mostrarMenu(Sistema sistema);
 }
