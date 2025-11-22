@@ -12,7 +12,7 @@ public class Feature extends Tarea{
 
 	@Override
 	public void accept(IVisitorTarea visitor) {
-		// TODO Auto-generated method stub
+		visitor.visitar(this);
 		
 	}
 
