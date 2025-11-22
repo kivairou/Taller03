@@ -2,7 +2,7 @@ package src;
 
 import java.time.LocalDate;
 
-public class Documentacion extends Tarea{
+public class Documentacion extends Tarea {
 
 	public Documentacion(String id, String descripcion, String estado, String responsable, String complejidad,
 			LocalDate fechaCreacion) {
@@ -12,8 +12,9 @@ public class Documentacion extends Tarea{
 
 	@Override
 	public void accept(IVisitorTarea visitor) {
-		// TODO Auto-generated method stub
-		
+		visitor.visitar(this);
+
 	}
 
 }
+
