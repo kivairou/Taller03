@@ -5,14 +5,14 @@
 
 package src;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
 
 	private static Scanner scan;
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 
 		Sistema sistema = Sistema.getInstancia();
 		sistema.leerArchivos();
@@ -27,7 +27,12 @@ public class App {
 
 		Usuario login = sistema.logeo(user, contra);
 		if (login != null) {
-			login.mostrarMenu(sistema);
+
+			if (login instanceof Administrador admin) {
+				sistema.menuAdmin(admin);
+			} else if (login instanceof Colaborador colab) {
+				sistema.menuColaborador(colab);
+			}
 		} else {
 			System.out.println("Usuario o contraseña incorrecta(s)");
 		}
