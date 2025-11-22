@@ -1,0 +1,13 @@
+Proyecto: PR001 | Plataforma de E-commerce | Responsable: admin1
+   - Tarea: T001 | Tipo: Bug | Descripcion: Error en el login de usuarios | Estado: Pendiente | Responsable: colab1 | Complejidad: Alta | Fecha: 2025-08-01
+   - Tarea: T002 | Tipo: Feature | Descripcion: Agregar carrito de compras | Estado: Pendiente | Responsable: colab2 | Complejidad: Media | Fecha: 2025-08-01
+   - Tarea: T003 | Tipo: Documentacion | Descripcion: Redactar manual de usuario | Estado: En progreso | Responsable: colab1 | Complejidad: Baja | Fecha: 2025-08-02
+
+Proyecto: PR002 | Sistema de Inventario | Responsable: admin2
+   - Tarea: T004 | Tipo: Feature | Descripcion: Implementar módulo de reportes | Estado: Pendiente | Responsable: colab2 | Complejidad: Alta | Fecha: 2025-08-02
+   - Tarea: T005 | Tipo: Bug | Descripcion: Fallo en exportación de datos | Estado: Pendiente | Responsable: colab1 | Complejidad: Alta | Fecha: 2025-08-03
+
+Proyecto: PR003 | Aplicación Móvil de Reservas | Responsable: admin3
+   - Tarea: T006 | Tipo: Feature | Descripcion: Diseñar pantalla de reservas | Estado: Pendiente | Responsable: colab1 | Complejidad: Media | Fecha: 2025-08-04
+   - Tarea: T007 | Tipo: Documentacion | Descripcion: Escribir casos de uso | Estado: Pendiente | Responsable: colab2 | Complejidad: Baja | Fecha: 2025-08-03
+
