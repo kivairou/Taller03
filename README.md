@@ -1,6 +1,7 @@
 # Taller03
 
-Taller 3 POO
+Taller 3 POO 
+Programación orientada a objetos
 
 nombres: Diego Seco | Kevin Zamora
 
